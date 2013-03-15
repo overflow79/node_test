@@ -1,0 +1,182 @@
+html, body {
+	height: 100%;
+	margin:0;
+	padding:0;
+}
+
+body {
+	background-color : #fff;
+	color: #333;
+	font-size : 12px;
+}
+
+#wrapper {
+	margin : 0 auto;
+	width : 99%;
+	height : 99%;
+}
+
+#messages {
+	overflow : auto;
+	height : 90%;
+	background-color : #fff;
+}
+
+#input {
+	position: fixed;
+	width : 100%;
+	bottom: 0;
+	height: 80px;
+	background-color : #eee;
+}
+
+.msg {
+	clear: both;
+	padding : 4px 0;
+	margin-bottom: 30px;
+}
+
+.msg .name {
+	float:left;
+	position: relative;
+	top: 15px;
+	font-weight : bold;
+	font-size : 14px;
+}
+
+.nick {
+	margin : 10px 0 0 10px;
+}
+
+#message {
+	float : left;
+	margin-left : 10px;
+	min-width : 50%;
+	max-width : 90%;
+	height: 29px;
+}
+
+#send {
+	border : 1px solid #B5B5B5;
+	display : inline-block;
+	text-decoration : none;
+	height: 35px;
+}
+
+#send:hover {
+	background-color : #dfdfdf;
+}
+
+#send:active {
+	position : relative;
+	top : 1px;
+}
+
+.mine {
+	text-align: right;
+	float:right;
+	margin-bottom: 0;
+}
+
+.msg .text {
+	float:left;
+	position:relative;
+	display: inline-block;
+	padding:15px;
+	color:#333;
+	background:#fff;
+	word-wrap: word-break;
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px;
+	border-radius:10px;
+}
+
+.msg .text.left {
+	border:3px solid #cee7ff;
+	margin-left:20px;
+}
+
+.msg .text.right {
+	border:3px solid #ffd0d0;
+	margin-right:20px;
+}
+
+.msg .text:before {
+	content:"";
+	position:absolute;
+	bottom:-20px;
+	left:40px;
+	border-width:20px 20px 0;
+	border-style:solid;
+	width:0;
+}
+
+.msg .text.left:before {
+	border-color:#cee7ff transparent;
+}
+
+.msg .text.right:before {
+	border-color:#ffd0d0 transparent;
+}
+
+.msg .text:after {
+	content:"";
+	position:absolute;
+	bottom:-13px;
+	left:47px;
+	border-width:13px 13px 0;
+	border-style:solid;
+	border-color:#fff transparent;
+	display:block; 
+	width:0;
+}
+
+.msg .text.top:before {
+	top:-20px;
+	bottom:auto;
+	left:auto;
+	right:40px;
+	border-width:0 20px 20px;
+}
+
+.msg .text.top:after {
+	top:-13px;
+	bottom:auto;
+	left:auto;
+	right:47px;
+	border-width:0 13px 13px;
+}
+
+.msg .text.left:before {
+	top:7px;
+	bottom:auto;
+	left:-15px;
+	border-width:15px 15px 15px 0;
+	border-color:transparent #cee7ff;
+}
+
+.msg .text.left:after {
+	top:13px;
+	bottom:auto;
+	left:-11px;
+	border-width:9px 11px 9px 0;
+	border-color:transparent #fff;
+}
+
+.msg .text.right:before {
+	top:7px;
+	bottom:auto;
+	left:auto;
+	right:-15px;
+	border-width:15px 0 15px 15px;
+	border-color:transparent #ffd0d0;
+}
+
+.msg .text.right:after {
+	top:13px;
+	bottom:auto;
+	left:auto;
+	right:-11px;
+	border-width:9px 0 9px 11px;
+	border-color:transparent #fff;
+}
