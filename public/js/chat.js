@@ -1,7 +1,7 @@
 //Create a chat module to use.
 (function () {
   window.Chat = {
-    socket : 'http://10.2.8.131/',
+    socket : 'http://119.64.57.88/',
   
     initialize : function(socketURL) {
       this.socket = io.connect(socketURL);
